@@ -4,7 +4,7 @@
 #include <cassert>
 #include "decl.h"
 #include <clocale>  
-
+#pragma execution_character_set("utf-8")
 using namespace sf;
 using namespace std;
 
