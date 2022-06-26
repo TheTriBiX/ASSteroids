@@ -9,9 +9,9 @@ using namespace sf;
 using namespace std;
 
 bool create_textures(string sourse) {
-	//* Функция принимает на вход значения:
-	//* sourse : string - путь до файла
-	//* и возвращает true если удалось создать текстуру из файла
+	/** Функция принимает на вход значения:
+	* sourse : string - путь до файла
+	* и возвращает true если удалось создать текстуру из файла */
 	bool c;
 	Texture a;
 		if (a.loadFromFile(sourse)) {
