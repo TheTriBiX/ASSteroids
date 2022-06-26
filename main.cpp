@@ -1,7 +1,26 @@
 #include <SFML/Graphics.hpp>
 #include <time.h>
+#include <iostream>
+#include <cassert>
+#include "decl.h"
 
 using namespace sf;
+using namespace std;
+
+bool create_textures(string sourse) {
+	//* Функция принимает на вход значения:
+	//* sourse : string - путь до файла
+	//* и возвращает true если удалось создать текстуру из файла
+	bool c;
+	Texture a;
+		if (a.loadFromFile(sourse)) {
+			c = true;
+		}
+		else {
+			c = false;
+		}
+	return c;
+}
 
 int main()
 {	/**функция в которой происходит загрузка текстур, отрисовка всех спрайтов и находится главный игровой цикл**/
@@ -158,6 +177,5 @@ int main()
 		
 		window.display();
 	}
-
 	return 0;
 	}
