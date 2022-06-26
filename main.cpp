@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cassert>
 #include "decl.h"
+#include <clocale>  
 
 using namespace sf;
 using namespace std;
@@ -24,6 +25,7 @@ bool create_textures(string sourse) {
 
 int main()
 {	/**функция в которой происходит загрузка текстур, отрисовка всех спрайтов и находится главный игровой цикл**/
+	setlocale(LC_ALL, "Russian");
 	srand(time(0));
 	RenderWindow window(VideoMode(1023, 682), "Game!");
 	
